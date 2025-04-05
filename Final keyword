@@ -1,0 +1,13 @@
+public class Main {
+    final int number = 100;
+
+    final void show() {
+        System.out.println("Final method");
+    }
+
+    public static void main(String[] args) {
+        Main obj = new Main();
+        obj.show();
+        System.out.println("Final variable: " + obj.number);
+    }
+}
