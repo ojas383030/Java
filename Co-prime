@@ -1,0 +1,23 @@
+import java.util.Scanner;
+public class CoPrimeCheck {
+    public static int gcd(int a, int b) {
+        while (b != 0) {
+            int temp = b;
+            b = a % b;
+            a = temp;
+        }
+        return a;
+    }
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter two numbers: ");
+        int x = sc.nextInt();
+        int y = sc.nextInt();
+        if (gcd(x, y) == 1) {
+            System.out.println("They are co-prime.");
+        } else {
+            System.out.println("They are not co-prime.");
+        }
+        sc.close();
+    }
+}
