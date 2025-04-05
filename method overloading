@@ -1,0 +1,17 @@
+public class Main {
+    public static void display() {
+        System.out.println("DEFAULT");
+    }
+
+    public static void display(double value) {
+        System.out.println("Value: " + value);
+    }
+
+    public static void display(int number) {
+        System.out.println("Number: " + number);
+    }
+
+    public static void main(String[] args) {
+        display();
+        display(3.11);
+        display(48);
