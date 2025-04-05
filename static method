@@ -1,0 +1,9 @@
+public class Main {
+    public static void goodEvening() {
+        System.out.println("Good Evening ");
+    }
+
+    public static void main(String[] args) {
+         goodEvening();
+    }
+}
